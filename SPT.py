@@ -17,7 +17,7 @@ for i in range(NUM):
 totmv = np.multiply(prc, share)
 # mu (date, relative market weight)
 mu = np.divide(totmv, np.tile(np.sum(totmv, axis=1), (NUM, 1)).T)
-# window side used to estimate variance
+# window size used to estimate variance
 T = 12
 
 # additively strategy
